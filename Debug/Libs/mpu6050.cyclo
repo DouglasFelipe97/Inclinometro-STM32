@@ -1,0 +1,8 @@
+../Libs/mpu6050.c:82:9:MPU6050_Init	2
+../Libs/mpu6050.c:117:6:MPU6050_Calibration	1
+../Libs/mpu6050.c:121:6:MPU6050_Read_Accel	1
+../Libs/mpu6050.c:143:6:MPU6050_Read_Gyro	1
+../Libs/mpu6050.c:165:6:MPU6050_Read_Temp	1
+../Libs/mpu6050.c:178:6:MPU6050_Read_All	7
+../Libs/mpu6050.c:231:6:kalman_calc	5
+../Libs/mpu6050.c:246:8:Kalman_getAngle	1
