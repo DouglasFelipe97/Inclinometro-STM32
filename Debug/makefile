@@ -61,8 +61,8 @@ all: main-build
 main-build: Inclinometro.elf secondary-outputs
 
 # Tool invocations
-Inclinometro.elf Inclinometro.map: $(OBJS) $(USER_OBJS) C:\Users\Laboratorio\Desktop\Douglas\ Autoban\STM32Cube\Inclinometro\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Inclinometro.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\Laboratorio\Desktop\Douglas Autoban\STM32Cube\Inclinometro\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Inclinometro.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Inclinometro.elf Inclinometro.map: $(OBJS) $(USER_OBJS) D:\Douglas\Repositorios\Inclinometro\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Inclinometro.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\Douglas\Repositorios\Inclinometro\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Inclinometro.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
